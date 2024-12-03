@@ -2,7 +2,7 @@
 FROM node:18 
 
 # mettre le dossier de travail a /app
-workdir /app
+WORKDIR /app
 
 # copier le package.jon et le package-lock.json
 COPY package*.json ./
