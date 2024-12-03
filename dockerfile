@@ -5,13 +5,13 @@ FROM node:18
 workdir /app
 
 # copier le package.jon et le package-lock.json
-COPY package*.json
+COPY package*.json ./
 
 #installer les dependance 
 RUN npm install 
 
 # copier le rest des fichier 
-COPY .. 
+COPY . . 
 
 #expose port 3000
 EXPOSE 3000
