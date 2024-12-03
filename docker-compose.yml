@@ -9,7 +9,7 @@ services:
     -  db
     volumes:
     -  .:/app
-
+    - /app/node_modules
 
   mailhog:
     image: mailhog/mailhog
